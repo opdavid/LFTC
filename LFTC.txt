@@ -1,0 +1,149 @@
+Lab 1 -  Minilanguage specification
+
+Data types:
+	- char
+	- int
+	- struct
+
+Assigment : " = "
+Input: read
+Output: write
+Conditional: if(condition){statement}else{statement}
+
+Language specification
+1 .Language Definition:
+  Lexic:
+      a.Special symbols, representing:
+	 - operators + - * / == < > <= = >= != 
+	 - separators [ ] { } ; space
+	 - reserved words:
+	    	array  string const else  if int  of program read 
+		then declare while write and or
+      c.constants
+	 1.integer - rule:
+	      noconst:=+no|-no|no
+	      no:= digit| digit no
+	 2.character
+	     character:='letter'|'digit'
+	 3.string
+	      constchar:="string"
+	      string:= char | char string
+	      char::= letter|digit
+
+2.2 Syntax
+	<program> 			::= "DECLARE" declarationList programBody
+	<declarationList> 	::= declaration | declaration ";" declarationList
+	<declaration> 		::= type space IDENTIFIER
+	<typel> 			::= "STRING" | "INT"
+	<arrayDeclaration>	::= "ARRAY" "[" nr "]" "OF" typel
+	<type> 				::= typel | arrayDeclaration 
+	<programBody>		::= "BEGIN" cmdpStmt "END"
+	<cmpdStmt>			::= stmt | stmt ";" cmpdstmt
+	<stmt> 				::= simpleStmt | structStmt
+	<simpleStmt>		::= assignmentStmt | ioStmt
+	<assignmentStmt> 	 ::= IDENTIFIER "=" expression 
+	<expression>		::= expression "+" term | expression "-" | term	
+	<term> 				::= term "*" factor | term "/" factor | factor
+	<factor> 			::= "(" expression ")" | IDENTIFIER | CONST
+	<ioStmt> 			::= "READ" "(" IDENTIFIER ")" | "WRITE" "(" expression ")"
+	<structStmt> 		::= programBody | ifStmt | whileStmt
+	<ifstmt> 			::= "IF" "(" condition ")" "{" stmt "}" | "IF" "(" condition ")" "{" stmt "}" "ELSE" "{" stmt "}" 
+  	<whilestmt> 		::= "WHILE" "("condition ")" "{" stmt "}"
+  	<condition> 		::= expression RELATION expression
+
+  	IDENTIFIER 	::= letter | letter letter | letter digit
+     letter 	::= "A" | "B" | . ..| "Z" | "a" | "b" | .. | "z"
+      digit 	::= "0" | "1" |...| "9"
+   RELATION 	::= "<" | "<=" | "=" | "!=" | ">=" | ">"
+   CONST 		::= digit | digit const
+
+   The scanner assignment will be diferentiated based on:
+	1. Identifiers:
+		- arbitrary length, no more than 250 characters
+	2. Symbol Table:
+		- unique for identifiers and constants
+	3. Symbol Table Organization:
+		- lexicographically binary tree
+
+
+
+| Token type	|   code |
+-------------------------
+| identifier	|    0  |
+-------------------------
+| constant		|    1  |
+-------------------------
+| program       |    2  |
+-------------------------
+|  array		|    3  |
+-------------------------
+|    of			|    4  |
+-------------------------
+|    var		|    5  |
+-------------------------
+|  integer      |    6  |
+-------------------------
+|  real  		|    7  |
+-------------------------
+| boolean       |    8  |
+-------------------------
+| begin 		|    9  |
+-------------------------
+| end			|   10  |
+-------------------------
+|read			|   11  |
+-------------------------
+|write 			|   12  |
+-------------------------
+| for			|   13  |
+-------------------------
+| to			|   14  |
+-------------------------
+| do 			|   15  |
+-------------------------
+| if			|   16  |
+-------------------------
+| then			|   17  |
+-------------------------
+|  else  		|   18  |
+-------------------------
+| and			|   19  |
+-------------------------
+|  or			|   20  |
+-------------------------
+|  not			|   21  |
+-------------------------
+| :				|   22  |
+-------------------------
+| ;				|   23  |
+-------------------------
+| ,     		|   24  |
+-------------------------
+| .				|   25  |
+-------------------------
+| +				|   26  |
+-------------------------
+| * 			|   27  |
+-------------------------
+| (				|   28  |
+-------------------------
+| )				|   29  |
+-------------------------
+| [				|   30  |
+-------------------------
+| ]    		 	|   31  |
+-------------------------
+| -				|   32  |
+-------------------------
+| <     		|   33  |
+-------------------------
+| >				|   34  |
+-------------------------
+| =				|   35  |
+-------------------------
+| != 			|   36  |
+-------------------------
+| { 			|   37  |
+-------------------------
+| } 			|   38  |
+-------------------------
