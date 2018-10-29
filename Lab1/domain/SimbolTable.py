@@ -1,3 +1,9 @@
+# sorted binary tree
+# t
+#
+#
+#
+#
 
 
 class SimbolTable:
@@ -20,5 +26,13 @@ class SimbolTable:
 
     def display(self, _node):
         return list(filter(None, [i for b in [
-            self.display(_node.left) if isinstance(_node.left, SimbolTable) else [getattr(_node.left, 'value', None)], [_node.value],
-            self.display(_node.right) if isinstance(_node.right, SimbolTable) else [getattr(_node.right, 'value', None)]] for i in b]))
+            self.display(_node.left) if isinstance(_node.left, SimbolTable) else [getattr(_node.left, 'value', None)],
+            [_node.value],
+            self.display(_node.right) if isinstance(_node.right, SimbolTable) else [
+                getattr(_node.right, 'value', None)]] for i in b]))
+
+    def search(self, token):
+        for value in self.display(self):
+            if value.getFirst() == token:
+                return value.getSecond()
+        return None

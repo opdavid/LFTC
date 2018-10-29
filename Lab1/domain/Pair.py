@@ -17,3 +17,9 @@ class Pair:
         st += ' ' + str(self.first)
         st += ', ' + str(self.second)
         return st
+
+    def getFirst(self):
+        return self.first
+
+    def getSecond(self):
+        return self.second

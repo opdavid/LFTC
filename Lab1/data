@@ -1,11 +1,1 @@
-declare
-integer i;
-integer aN9a;
-begin
-i=0;
-while(i<10){
-    i = i+1;
-    aN9a = 12;
-}
-write(i);
-end
+a <= b

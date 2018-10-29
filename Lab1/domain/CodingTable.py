@@ -42,11 +42,19 @@ class CodingTable:
             "}": 37,
             "declare": 38,
             "while": 39,
+            "<=": 40,
+
         }
         # print(self.dict)
 
     def get_value_for_key(self, key):
         return self.dict[key]
+
+    def get_key_for_value(self, value):
+        for key, value1 in self.dict.items():
+            if value1 == value:
+                return key
+        return None
 
     def get_dict(self):
         return dict
