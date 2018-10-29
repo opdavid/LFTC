@@ -23,8 +23,4 @@ def display(_node):
         display(_node.right) if isinstance(_node.right, SortTree) else [getattr(_node.right, 'value', None)]] for i in b]))
 
 
-tree = SortTree("zor")
-for i in ["ana", "gama", "cri", "fic"]:
-    tree.insert_val(i)
 
-print(display(tree))
