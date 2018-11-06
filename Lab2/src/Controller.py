@@ -100,11 +100,7 @@ class Controller:
                                     print(p)
                             elif cmd1 == 5:
                                 non_terminal = input("Give the non-terminal: ")
-                                for p in self.gramar.productions:
-                                    print(p.lhd + " " + non_terminal)
-                                    print(p.lhd == non_terminal)
-                                    if p.lhd == non_terminal:
-                                        print(p.lhd)
+                                self.gramar.getProductionsFor(non_terminal)
                             elif cmd1 == 6:
                                 break
                             else:
