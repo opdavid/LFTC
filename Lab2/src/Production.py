@@ -3,6 +3,9 @@ class Production:
         self.lhd = ''
         self.rhd = []
 
+    def get_lhd(self):
+        return self.lhd
+
     def __str__(self):
         s = ""
         s += self.lhd + " - "

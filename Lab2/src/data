@@ -1,6 +1,7 @@
 S,A,B,C
 a,b
+S
 S - a A
-A - a | B
-B - b
+A - a | aB
+B - b C
 C - a | b | e

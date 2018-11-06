@@ -15,6 +15,7 @@ class Controller:
         with open(filename) as f:
             self.gramar.nodes = f.readline().rstrip('\n').split(',')
             self.gramar.terminals = f.readline().rstrip('\n').split(',')
+            self.gramar.startingSymbol = f.readline().rstrip('\n')
             for line in f:
                 line = line.rstrip('\n').split('-')
                 p = Production()
@@ -32,11 +33,13 @@ class Controller:
                     p.rhd = rhd
                     self.gramar.productions.append(p)
 
+
     def readFromFileAutomata(self, filename):
         with open(filename) as f:
             self.automata.states = f.readline().rstrip('\n').split(',')
             self.automata.alphabet = f.readline().rstrip('\n').split(',')
             self.automata.finalStates = f.readline().rstrip('\n').split(',')
+            self.automata.startingSymbol = f.readline().rstrip('\n')
             for line in f:
                 line = line.rstrip('\n').split('=')
                 t = Transition()
@@ -46,12 +49,15 @@ class Controller:
                 t.fromState = lhd[0].split('(')[1]
                 t.alpha = lhd[1].split(')')[0]
                 self.automata.transitions.append(t)
+        print(self.automata.startingSymbol)
 
     def printMenu1(self):
         print("********************\n")
         print("1. Gramar")
         print("2. Finite automata")
-        print("3. Exit")
+        print("3. From Gramar to Finite automata")
+        print("4. From Finite automata to Gramar")
+        print("5. Exit")
         print("********************\n")
 
     def printMenu2(self):
@@ -100,7 +106,8 @@ class Controller:
                                     print(p)
                             elif cmd1 == 5:
                                 non_terminal = input("Give the non-terminal: ")
-                                self.gramar.getProductionsFor(non_terminal)
+                                for x in self.gramar.getProductionsFor(non_terminal):
+                                    print(x)
                             elif cmd1 == 6:
                                 break
                             else:
@@ -136,6 +143,11 @@ class Controller:
                             print("Error")
                             break
                 elif cmd == 3:
+                    for x in self.gramar.transformToFA().transitions:
+                        print(x)
+                elif cmd == 4:
+                    self.automata.transformToGramar()
+                elif cmd == 5:
                     print("Bye..")
                     break
                 else:
