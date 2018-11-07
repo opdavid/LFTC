@@ -19,7 +19,7 @@ class Controller:
             for line in f:
                 line = line.rstrip('\n').split('-')
                 p = Production()
-                lhd = line[0]
+                lhd = line[0].split(' ')[0]
                 p.lhd = lhd
                 rhd = line[1].rstrip('\n').split()
                 if '|' in rhd:
@@ -32,7 +32,6 @@ class Controller:
                 else:
                     p.rhd = rhd
                     self.gramar.productions.append(p)
-
 
     def readFromFileAutomata(self, filename):
         with open(filename) as f:
@@ -49,7 +48,6 @@ class Controller:
                 t.fromState = lhd[0].split('(')[1]
                 t.alpha = lhd[1].split(')')[0]
                 self.automata.transitions.append(t)
-        print(self.automata.startingSymbol)
 
     def printMenu1(self):
         print("********************\n")

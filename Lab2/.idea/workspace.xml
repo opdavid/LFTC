@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3a7a20-4678-4321-ab8b-346522424ee1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automata.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FA" beforeDir="false" afterPath="$PROJECT_DIR$/src/FA" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gramar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gramar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Production.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data" beforeDir="false" afterPath="$PROJECT_DIR$/src/data" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,14 +15,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Lab2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1541438295139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Lab2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1541571185126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-929101564">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,14 +40,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="data" value="48" />
-          <entry key="py" value="1168" />
+          <entry key="data" value="52" />
+          <entry key="py" value="1215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="48" />
-          <entry key="Python" value="1168" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Python" value="1215" />
         </counts>
       </usages-collector>
     </session>
@@ -96,32 +95,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.79318935">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/Controller.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="390">
-                      <caret line="145" column="41" lean-forward="true" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
-                      <folding>
-                        <element signature="e#0#37#0" expanded="true" />
-                        <marker date="1541510381710" expanded="true" signature="194:266" ph="..." />
-                        <marker date="1541510381710" expanded="true" signature="1993:2002" ph="..." />
-                        <marker date="1541510381710" expanded="true" signature="1993:2911" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/Gramar.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="552">
-                      <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-                      <folding>
-                        <element signature="e#0#33#0" expanded="true" />
-                        <marker date="1541511190203" expanded="true" signature="87:88" ph="..." />
-                        <marker date="1541511190203" expanded="true" signature="459:618" ph="..." />
-                        <marker date="1541511190203" expanded="true" signature="687:696" ph="..." />
-                      </folding>
+                    <state relative-caret-position="387">
+                      <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
                     </state>
                   </provider>
                 </entry>
@@ -129,12 +107,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/Production.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="132">
-                      <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-                      <folding>
-                        <marker date="1541508709615" expanded="true" signature="109:139" ph="..." />
-                        <marker date="1541508709615" expanded="true" signature="134:139" ph="..." />
-                      </folding>
+                    <state relative-caret-position="198">
+                      <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
                     </state>
                   </provider>
                 </entry>
@@ -146,8 +120,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/data">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="110">
-                      <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+                    <state relative-caret-position="88">
+                      <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
                     </state>
                   </provider>
                 </entry>
@@ -190,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/FA" />
         <option value="$PROJECT_DIR$/src/Automata.py" />
         <option value="$PROJECT_DIR$/src/Production.py" />
-        <option value="$PROJECT_DIR$/src/Controller.py" />
-        <option value="$PROJECT_DIR$/src/Gramar.py" />
         <option value="$PROJECT_DIR$/src/data" />
+        <option value="$PROJECT_DIR$/src/Gramar.py" />
+        <option value="$PROJECT_DIR$/src/Controller.py" />
       </list>
     </option>
   </component>
@@ -214,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,7 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,13 +275,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13962065" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23427331" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3383948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,10 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <marker date="1541494674392" expanded="true" signature="17:18" ph="..." />
-            <marker date="1541494674392" expanded="true" signature="17:23" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -350,6 +321,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Automata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FA">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -357,57 +335,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Automata.py">
+    <entry file="file://$PROJECT_DIR$/src/Production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gramar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
-            <marker date="1541508258410" expanded="true" signature="15:16" ph="..." />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="145" column="41" lean-forward="true" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1541510381710" expanded="true" signature="194:266" ph="..." />
-            <marker date="1541510381710" expanded="true" signature="1993:2002" ph="..." />
-            <marker date="1541510381710" expanded="true" signature="1993:2911" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <marker date="1541508709615" expanded="true" signature="109:139" ph="..." />
-            <marker date="1541508709615" expanded="true" signature="134:139" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gramar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1541511190203" expanded="true" signature="87:88" ph="..." />
-            <marker date="1541511190203" expanded="true" signature="459:618" ph="..." />
-            <marker date="1541511190203" expanded="true" signature="687:696" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="387">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
         </state>
       </provider>
     </entry>

@@ -11,15 +11,9 @@ class Gramar:
         self.productions = []
 
     def getProductionsFor(self, non_terminal):
-        # print(non_terminal)
-        # print(self.startingSymbol)
-        # l = self.productions[0].lhd[0]
-        # print(l)
-        # print(non_terminal is l)
         prodList = []
         for p in self.productions:
-            l = p.lhd[0]
-            if non_terminal is l:
+            if non_terminal is p.lhd:
                 prodList.append(p)
         return prodList
 
@@ -38,6 +32,7 @@ class Gramar:
                 if len(production.rhd) == 1:
                     t.toState = 'K'
                 else:
+
                     t.toState = production.rhd[1]
                 a.transitions.append(t)
         return a
