@@ -2,7 +2,7 @@ from src.Automata import Automata
 from src.Transition import Transition
 
 
-class Gramar:
+class Grammar:
 
     def __init__(self):
         self.nodes = []

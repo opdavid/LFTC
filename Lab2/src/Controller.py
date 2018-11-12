@@ -1,5 +1,5 @@
 from src.Production import Production
-from src.Gramar import Gramar
+import src.Gramar
 from src.Automata import Automata
 from src.Transition import Transition
 import re
@@ -8,7 +8,7 @@ import re
 class Controller:
 
     def __init__(self):
-        self.gramar = Gramar()
+        self.gramar = src.Gramar.Grammar()
         self.automata = Automata()
 
     def readFromFileGramar(self, filename):
@@ -52,7 +52,7 @@ class Controller:
                 self.automata.transitions.append(t)
 
     def printMenu1(self):
-        print("********************")
+        print("\n********************")
         print("1. Gramar")
         print("2. Finite automata")
         print("3. From Gramar to Finite automata")
@@ -61,7 +61,7 @@ class Controller:
         print("********************\n")
 
     def printMenu2(self):
-        print("********************")
+        print("\n********************")
         print("1. Read Gramar")
         print("2. Print Non-terminals")
         print("3. Print Terminals")
@@ -71,7 +71,7 @@ class Controller:
         print("********************\n")
 
     def printMenu3(self):
-        print("********************")
+        print("\n********************")
         print("1. Read Automata")
         print("2. Print States")
         print("3. Print alphabet")
@@ -146,7 +146,7 @@ class Controller:
                     for x in self.gramar.transformToFA().transitions:
                         print(x)
                 elif cmd == 4:
-                    self.automata.transformToGramar()
+                    self.automata.transformToGrammar()
                 elif cmd == 5:
                     print("Bye..")
                     break
