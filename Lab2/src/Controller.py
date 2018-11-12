@@ -32,6 +32,8 @@ class Controller:
                 else:
                     p.rhd = rhd
                     self.gramar.productions.append(p)
+        if self.gramar.verifyIfRegular() is False:
+            print("Not a regular grammar")
 
     def readFromFileAutomata(self, filename):
         with open(filename) as f:
@@ -50,7 +52,7 @@ class Controller:
                 self.automata.transitions.append(t)
 
     def printMenu1(self):
-        print("********************\n")
+        print("********************")
         print("1. Gramar")
         print("2. Finite automata")
         print("3. From Gramar to Finite automata")
@@ -59,7 +61,7 @@ class Controller:
         print("********************\n")
 
     def printMenu2(self):
-        print("********************\n")
+        print("********************")
         print("1. Read Gramar")
         print("2. Print Non-terminals")
         print("3. Print Terminals")
@@ -69,7 +71,7 @@ class Controller:
         print("********************\n")
 
     def printMenu3(self):
-        print("********************\n")
+        print("********************")
         print("1. Read Automata")
         print("2. Print States")
         print("3. Print alphabet")

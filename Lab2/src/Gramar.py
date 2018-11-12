@@ -18,7 +18,12 @@ class Gramar:
         return prodList
 
     def verifyIfRegular(self):
-        pass
+        for p in self.productions:
+            if p.rhd[0] in self.nodes:
+                return False
+            if p.rhd[0] is 'e' and p.lhd is not self.startingSymbol:
+                return False
+        return True
 
     def transformToFA(self):
         a = Automata()
@@ -32,7 +37,6 @@ class Gramar:
                 if len(production.rhd) == 1:
                     t.toState = 'K'
                 else:
-
                     t.toState = production.rhd[1]
                 a.transitions.append(t)
         return a
