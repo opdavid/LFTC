@@ -23,12 +23,17 @@ class Grammar:
                 return False
             if p.rhd[0] is 'e' and p.lhd is not self.startingSymbol:
                 return False
+            if len(p.rhd) > 1 and p.rhd[1] is self.startingSymbol:
+                return False
+            if len(p.rhd) > 2:
+                return False
         return True
 
     def transformToFA(self):
         a = Automata()
         a.states = self.nodes
         a.alphabet = self.terminals
+        a.finalStates = []
         for non_terminal in self.nodes:
             for production in self.getProductionsFor(non_terminal):
                 t = Transition()
@@ -38,5 +43,7 @@ class Grammar:
                     t.toState = 'K'
                 else:
                     t.toState = production.rhd[1]
+                if production.rhd[0] is 'e':
+                    a.finalStates.append(production.lhd)
                 a.transitions.append(t)
         return a
