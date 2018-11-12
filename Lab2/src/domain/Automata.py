@@ -1,5 +1,7 @@
-from src.Production import *
-import src.Gramar
+
+from src.Production import Production
+import src.domain.Gramar
+
 
 class Automata:
 
@@ -11,7 +13,7 @@ class Automata:
         self.transitions = []
 
     def transformToGrammar(self):
-        g = src.Gramar.Grammar()
+        g = src.domain.Gramar.Grammar()
         g.startingSymbol = self.startingSymbol
         g.nodes = self.states
         g.terminals = self.alphabet

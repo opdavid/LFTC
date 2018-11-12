@@ -1,4 +1,4 @@
-from src.Automata import Automata
+from src.domain.Automata import Automata
 from src.Transition import Transition
 
 
