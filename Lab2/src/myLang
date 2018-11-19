@@ -1,0 +1,31 @@
+program,declarationList,declaration,typel,arrayDeclaration,type,programBody,cmpdStmt,stmt,simpleStmt,assignmentStmt,expression,term,factor,ioStmt,structStmt,ifstmt,whilestmt,condition,IDENTIFIER,letter,digit,RELATION,CONST
+
+identifier,constant,program,array,of,var,integer,real,boolean,begin,end,read,write,for,to,do,if,then,else,and,or,not,:,;,,,.,+,*,(,),[,],-,<,>,=,{,}
+
+program
+
+program - "DECLARE" declarationList programBody
+declarationList	- declaration | declaration ";" declarationList
+declaration	- type space IDENTIFIER
+typel - "STRING" | "INT"
+arrayDeclaration - "ARRAY" "[" nr "]" "OF" typel
+type - typel | arrayDeclaration
+programBody	- "BEGIN" cmdpStmt "END"
+cmpdStmt - stmt | stmt ";" cmpdstmt
+stmt - simpleStmt | structStmt
+simpleStmt - assignmentStmt | ioStmt
+assignmentStmt - IDENTIFIER "=" expression
+expression - expression "+" term | expression "-" | term
+term - term "*" factor | term "/" factor | factor
+factor - "(" expression ")" | IDENTIFIER | CONST
+ioStmt - "READ" "(" IDENTIFIER ")" | "WRITE" "(" expression ")"
+structStmt - programBody | ifStmt | whileStmt
+ifstmt - "IF" "(" condition ")" "{" stmt "}" | "IF" "(" condition ")" "{" stmt "}" "ELSE" "{" stmt "}"
+whilestmt - "WHILE" "("condition ")" "{" stmt "}"
+condition - expression RELATION expression
+
+IDENTIFIER - letter | letter letter | letter digit
+letter - "A" | "B" | . ..| "Z" | "a" | "b" | .. | "z"
+digit - "0" | "1" |...| "9"
+RELATION - "<" | "<=" | "=" | "!=" | ">=" | ">"
+CONST - digit | digit const
