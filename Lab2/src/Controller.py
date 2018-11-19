@@ -1,6 +1,6 @@
 from src.Production import Production
-import src.Gramar
-from src.Automata import Automata
+from src.domain.Gramar import Grammar
+from src.domain.Automata import Automata
 from src.Transition import Transition
 import re
 
@@ -8,7 +8,7 @@ import re
 class Controller:
 
     def __init__(self):
-        self.gramar = src.Gramar.Grammar()
+        self.gramar = Grammar()
         self.automata = Automata()
 
     def readFromFileGramar(self, filename):
@@ -80,6 +80,67 @@ class Controller:
         print("6. Back")
         print("********************\n")
 
+    def readGrammar(self):
+        g = Grammar()
+        token = input("give the nonterminals: ")
+        g.nodes = token.split(',')
+        token = input("give the terminals: ")
+        g.terminals = token.split(',')
+        g.startingSymbol = input("Starting symbol: ")
+        while True:
+            print("1.Give a production: ")
+            print("2.Exit: ")
+            cmd = input()
+            if cmd == '1':
+                token = input("From: ")
+                p = Production()
+                p.lhd = token
+                token = input("To:")
+                if len(token) > 1:
+                    p.rhd.append(token[0])
+                    p.rhd.append(token[1])
+                else:
+                    p.rhd.append(token[0])
+                g.productions.append(p)
+            elif cmd == '2':
+                break
+            else:
+                print("invalid command")
+        return g
+
+    def readAutomata(self):
+        a = Automata()
+        token = input("give the states: ")
+        a.states = token.split(',')
+        token = input("give the alphabet: ")
+        a.alphabet = token.split(',')
+        a.startingSymbol = input("Starting symbol: ")
+        token = input("give the final states: ")
+        a.finalStates = token.split(',')
+        while True:
+            print("1.Give a transition: ")
+            print("2.Exit: ")
+            cmd = input()
+            if cmd == '1':
+                token = input("From: ")
+                t = Transition()
+                t.fromState = token
+                token = input("To:")
+                t.toState = token
+                token = input("With: ")
+                t.alpha = token
+                a.transitions.append(t)
+            elif cmd == '2':
+                break
+            else:
+                print("invalid command")
+
+        print(a.states)
+        print(a.alphabet)
+        for t in a.transitions:
+            print(t)
+        return a
+
     def run(self):
         self.readFromFileGramar("data")
         self.readFromFileAutomata("FA")
@@ -94,6 +155,8 @@ class Controller:
                             cmd1 = int(input())
                             if cmd1 == 1:
                                 print("read")
+                                self.gramar = self.readGrammar()
+                                print(self.gramar.verifyIfRegular())
                             elif cmd1 == 2:
                                 print("NON-TERMINALS: ")
                                 print(self.gramar.nodes)
@@ -122,6 +185,7 @@ class Controller:
                             cmd1 = int(input())
                             if cmd1 == 1:
                                 print("read")
+                                self.automata = self.readAutomata()
                             elif cmd1 == 2:
                                 print("STATES: ")
                                 print(self.automata.states)

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3a7a20-4678-4321-ab8b-346522424ee1" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/myLang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FA" beforeDir="false" afterPath="$PROJECT_DIR$/src/FA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Automata.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Automata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Gramar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Gramar.py" afterDir="false" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,38 +18,48 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Lab2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1542041604794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
   <component name="FUSProjectUsageTrigger">
     <session id="-929101564">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="data" value="2" />
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="data" value="74" />
-          <entry key="py" value="1497" />
+          <entry key="FA" value="4" />
+          <entry key="data" value="79" />
+          <entry key="py" value="2695" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="1497" />
+          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="Python" value="2695" />
         </counts>
       </usages-collector>
     </session>
@@ -90,14 +107,27 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.79318935">
       <split-first>
+<<<<<<< HEAD
         <splitter split-orientation="horizontal" split-proportion="0.40103272">
+=======
+        <splitter split-orientation="horizontal" split-proportion="0.8471646">
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/Controller.py">
                   <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                     <state relative-caret-position="449">
                       <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+=======
+                    <state relative-caret-position="749">
+                      <caret line="187" column="67" selection-start-line="187" selection-start-column="67" selection-end-line="187" selection-end-column="67" />
+                      <folding>
+                        <element signature="e#0#37#0" expanded="true" />
+                        <marker date="1542036645069" expanded="true" signature="3929:4933" ph="..." />
+                      </folding>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
                     </state>
                   </provider>
                 </entry>
@@ -112,15 +142,44 @@
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
                 <entry file="file://$PROJECT_DIR$/src/Gramar.py">
                   <provider selected="true" editor-type-id="text-editor" />
+=======
+                <entry file="file://$PROJECT_DIR$/src/domain/Gramar.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="395">
+                      <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+                      <folding>
+                        <element signature="e#0#33#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/domain/Automata.py">
+                  <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+                    <state relative-caret-position="462">
+                      <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+=======
+                    <state relative-caret-position="350">
+                      <caret line="31" column="103" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
+                      <folding>
+                        <element signature="e#1#38#0" expanded="true" />
+                      </folding>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
+                    </state>
+                  </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/Automata.py">
+                <entry file="file://$PROJECT_DIR$/src/Transition.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="462">
-                      <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+                    <state relative-caret-position="264">
+                      <caret line="12" selection-start-line="12" selection-end-line="12" />
                     </state>
                   </provider>
                 </entry>
@@ -147,8 +206,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/data">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="132">
                   <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+=======
+                <state relative-caret-position="44">
+                  <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
                 </state>
               </provider>
             </entry>
@@ -167,19 +231,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/src/Main.py" />
         <option value="$PROJECT_DIR$/src/Transition.py" />
-        <option value="$PROJECT_DIR$/src/FA" />
         <option value="$PROJECT_DIR$/src/Production.py" />
-        <option value="$PROJECT_DIR$/src/data" />
         <option value="$PROJECT_DIR$/src/Gramar.py" />
-        <option value="$PROJECT_DIR$/src/Controller.py" />
         <option value="$PROJECT_DIR$/src/Automata.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/myLang" />
+=======
+        <option value="$PROJECT_DIR$/src/Controller.py" />
+        <option value="$PROJECT_DIR$/src/domain/Gramar.py" />
+        <option value="$PROJECT_DIR$/src/data" />
+        <option value="$PROJECT_DIR$/src/FA" />
+        <option value="$PROJECT_DIR$/src/domain/Automata.py" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
       </list>
     </option>
   </component>
@@ -214,6 +288,12 @@
               <item name="Lab2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -229,9 +309,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitWorkspace\LFTC\Lab2\src\domain" />
       <recent name="D:\GitWorkspace\LFTC\Lab2\src" />
     </key>
   </component>
@@ -286,18 +368,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541434640718</updated>
+<<<<<<< HEAD
       <workItem from="1542614593775" duration="5000" />
+=======
+      <workItem from="1542034828375" duration="36000" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="5000" />
+=======
+    <option name="totallyTimeSpent" value="36000" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.091675445" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09381663" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -306,13 +399,17 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28091106" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21475054" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.18329719" />
@@ -322,11 +419,20 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+=======
+      <window_info anchor="right" id="PlantUML" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +442,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Transition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -346,6 +459,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -367,18 +481,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Automata.py">
+=======
+    <entry file="file://$PROJECT_DIR$/src/domain/Gramar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="395">
+          <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="187" column="67" selection-start-line="187" selection-start-column="67" selection-end-line="187" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1542036645069" expanded="true" signature="3929:4933" ph="..." />
+          </folding>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FA">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="462">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+=======
+        <state relative-caret-position="44">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Automata.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="449">
           <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
         </state>
@@ -388,6 +528,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-80">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+=======
+        <state relative-caret-position="350">
+          <caret line="31" column="103" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
+          <folding>
+            <element signature="e#1#38#0" expanded="true" />
+          </folding>
+>>>>>>> f15972e156f03d16f9489ebb321bc5fc883e0ffb
         </state>
       </provider>
     </entry>
