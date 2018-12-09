@@ -1,6 +1,6 @@
 program,declarationList,declaration,typel,arrayDeclaration,type,programBody,cmpdStmt,stmt,simpleStmt,assignmentStmt,expression,term,factor,ioStmt,structStmt,ifstmt,whilestmt,condition,IDENTIFIER,letter,digit,RELATION,CONST
 
-identifier,constant,program,array,of,var,integer,real,boolean,begin,end,read,write,for,to,do,if,then,else,and,or,not,:,;,,,.,+,*,(,),[,],-,<,>,=,{,}
+identifier,constant,array,of,var,integer,real,boolean,begin,end,read,write,for,to,do,if,then,else,and,or,not,:,;,,,.,+,*,(,),[,],-,<,>,=,{,}
 
 program
 
