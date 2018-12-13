@@ -4,7 +4,8 @@ from src.Controller import *
 def main():
     c = Controller()
     c.readFromFile("data")
-    c.computeFirstOfGramar()
+    c.computeFirstOfGrammar()
+    c.computeFollowOfGrammar()
 
 
 if __name__ == "__main__":

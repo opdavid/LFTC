@@ -25,6 +25,9 @@ class Controller:
                 p.rhd = rhd
                 self.grammar.productions.append(p)
 
-    def computeFirstOfGramar(self):
+    def computeFirstOfGrammar(self):
         self.grammar.computeFirst()
         print(self.grammar.first)
+
+    def computeFollowOfGrammar(self):
+        self.grammar.computeFollow()

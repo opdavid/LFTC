@@ -53,3 +53,21 @@ class Grammar:
             if set(self.first[key]) != set(first[key]):
                 return False
         return True
+
+    def computeFollow(self):
+        f = {}
+        for node in self.nodes:
+            f[node] = []
+        f[self.startingSymbol].append('e')
+
+        print(f)
+        while True:
+            for node in self.nodes:
+                for production in self.productions:
+                    if node in production.rhd:
+                        i = 0
+                        while i < production.rhd.length:
+                            if node == production.rhd[i] and i+1 < production.rhd.length:
+                                f[node].append(production.rhd[i+1])
+                            i += 1
+
