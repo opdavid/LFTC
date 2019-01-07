@@ -1,6 +1,7 @@
 from src.Grammar import Grammar
 from src.Production import Production
 from src.Stack import Stack
+import copy
 
 
 class Controller:
@@ -36,7 +37,7 @@ class Controller:
 
     def computeTable(self):
         self.grammar.computeTable()
-        print(self.grammar.table)
+        # print(self.grammar.table)
 
     def analize(self):
         initialStack = Stack()
@@ -50,16 +51,19 @@ class Controller:
         initialStack.push('*')
         initialStack.push('a')
         workingStack.push(self.grammar.startingSymbol)
-        print(initialStack.isEmpty())
+
         while not initialStack.isEmpty():
-            print(workingStack.peek(), initialStack.peek())
+            print(workingStack)
+            print(initialStack)
             print(self.grammar.table[(workingStack.peek(), initialStack.peek())])
+            if workingStack.peek() == 'e':
+                workingStack.pop()
             if self.grammar.table[(workingStack.peek(), initialStack.peek())][0] == 'pop':
                 workingStack.pop()
                 initialStack.pop()
             else:
                 if len(self.grammar.table[(workingStack.peek(), initialStack.peek())]) > 0:
-                    l = self.grammar.table[(workingStack.peek(), initialStack.peek())][0][0]
+                    l = copy.deepcopy(self.grammar.table[(workingStack.peek(), initialStack.peek())][0][0])
                     print(l)
                     nr = self.grammar.table[(workingStack.peek(), initialStack.peek())][0][1]
                     print(nr)
@@ -67,8 +71,11 @@ class Controller:
                     while l:
                         workingStack.push(l[-1])
                         del l[-1]
-
                     output.append(nr)
+
+        while not workingStack.isEmpty():
+            output.append(self.grammar.table[(workingStack.peek(), 'e')][0][1])
+            workingStack.pop()
 
         print(output)
 
