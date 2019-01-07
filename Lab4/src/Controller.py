@@ -1,5 +1,6 @@
 from src.Grammar import Grammar
 from src.Production import Production
+from src.Stack import Stack
 
 
 class Controller:
@@ -27,7 +28,49 @@ class Controller:
 
     def computeFirstOfGrammar(self):
         self.grammar.computeFirst()
-        print(self.grammar.first)
+        # print(self.grammar.first)
 
     def computeFollowOfGrammar(self):
         self.grammar.computeFollow()
+        # print(self.grammar.follow)
+
+    def computeTable(self):
+        self.grammar.computeTable()
+        print(self.grammar.table)
+
+    def analize(self):
+        initialStack = Stack()
+        workingStack = Stack()
+        output = []
+        initialStack.push(')')
+        initialStack.push('a')
+        initialStack.push('+')
+        initialStack.push('a')
+        initialStack.push('(')
+        initialStack.push('*')
+        initialStack.push('a')
+        workingStack.push(self.grammar.startingSymbol)
+        print(initialStack.isEmpty())
+        while not initialStack.isEmpty():
+            print(workingStack.peek(), initialStack.peek())
+            print(self.grammar.table[(workingStack.peek(), initialStack.peek())])
+            if self.grammar.table[(workingStack.peek(), initialStack.peek())][0] == 'pop':
+                workingStack.pop()
+                initialStack.pop()
+            else:
+                if len(self.grammar.table[(workingStack.peek(), initialStack.peek())]) > 0:
+                    l = self.grammar.table[(workingStack.peek(), initialStack.peek())][0][0]
+                    print(l)
+                    nr = self.grammar.table[(workingStack.peek(), initialStack.peek())][0][1]
+                    print(nr)
+                    workingStack.pop()
+                    while l:
+                        workingStack.push(l[-1])
+                        del l[-1]
+
+                    output.append(nr)
+
+        print(output)
+
+
+

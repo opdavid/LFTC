@@ -6,6 +6,8 @@ def main():
     c.readFromFile("data")
     c.computeFirstOfGrammar()
     c.computeFollowOfGrammar()
+    c.computeTable()
+    c.analize()
 
 
 if __name__ == "__main__":
