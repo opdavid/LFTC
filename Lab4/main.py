@@ -4,6 +4,7 @@ from src.Controller import *
 def main():
     c = Controller()
     c.readFromFile("data")
+    # c.readFromFile("myLang")
     c.computeFirstOfGrammar()
     c.computeFollowOfGrammar()
     c.computeTable()

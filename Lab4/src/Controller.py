@@ -29,17 +29,18 @@ class Controller:
 
     def computeFirstOfGrammar(self):
         self.grammar.computeFirst()
-        # print(self.grammar.first)
+        print(self.grammar.first)
 
     def computeFollowOfGrammar(self):
         self.grammar.computeFollow()
-        # print(self.grammar.follow)
+        print(self.grammar.follow)
 
     def computeTable(self):
         self.grammar.computeTable()
         # print(self.grammar.table)
 
     def analize(self):
+        check = 1
         initialStack = Stack()
         workingStack = Stack()
         output = []
@@ -72,8 +73,12 @@ class Controller:
                         workingStack.push(l[-1])
                         del l[-1]
                     output.append(nr)
+                else:
+                    check=0
+                    print("error")
+                    break
 
-        while not workingStack.isEmpty():
+        while not workingStack.isEmpty() and check == 1:
             output.append(self.grammar.table[(workingStack.peek(), 'e')][0][1])
             workingStack.pop()
 
